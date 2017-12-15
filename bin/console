@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+define('PROJECT_BIN', __DIR__);
+define('PROJECT_VAR', __DIR__ . '/../var/');
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+
+$application->add(new \Backmarket\Command\ProductPriceDownloaderCommand());
+
+$application->run();

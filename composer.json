@@ -1,0 +1,27 @@
+{
+  "name": "leo/wallmart",
+  "license": "proprietary",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  },
+  "autoload-dev": {
+    "files": [
+      "vendor/symfony/var-dumper/Resources/functions/dump.php"
+    ]
+  },
+  "require": {
+    "php": ">=7.1.1",
+    "symfony/console": "~4.0",
+    "symfony/var-dumper": "~4.0",
+    "symfony/dom-crawler": "~4.0",
+    "symfony/css-selector": "~4.0",
+    "symfony/serializer": "~4.0",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
